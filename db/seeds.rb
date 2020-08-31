@@ -25,7 +25,9 @@ User.create(
 Workout.create(
     name: "Fran",
     date: ("2020/8/26"),
-    workout: "21-15-9: Thrusters(95/65), Burpees",
+    workout: "21-15-9: 
+    Thrusters(95/65), 
+    Burpees",
     description: "No Rest, No Mercy, Not Ever!",
     admin_id: Admin.first.id
 )
