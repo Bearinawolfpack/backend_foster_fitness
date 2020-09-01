@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :workouts, only: [:index, :show, :create, :update]
+  resources :workouts
+  # , only: [:index, :show, :create, :update]
   resources :coaches
   resources :services
   resources :events
