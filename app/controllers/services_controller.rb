@@ -8,11 +8,20 @@ class ServicesController < ApplicationController
         @services = Service.all
         render json: @services
     end
+    
+    def create
+        @service = Service.create(service_params)
+    end
 
     def update
         @service = Service.find(params[:id])
         @service.update(service_params)
         render json: @service
+    end
+
+    def destroy
+        @service = Service.find(params[:id])
+        @service.destroy
     end
 
     private
